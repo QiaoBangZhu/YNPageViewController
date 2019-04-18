@@ -206,6 +206,7 @@
     if (self.configration.showScrollLine) {
         self.lineView.frame = CGRectMake(lineX - self.configration.lineLeftAndRightAddWidth + self.configration.lineLeftAndRightMargin, lineY - self.configration.lineBottomMargin, lineW + self.configration.lineLeftAndRightAddWidth * 2 - 2 * self.configration.lineLeftAndRightMargin, lineH);
         self.lineView.layer.cornerRadius = self.configration.lineCorner;
+        self.lineView.layer.zPosition = -1;
         [self.scrollView addSubview:self.lineView];
     }
     
